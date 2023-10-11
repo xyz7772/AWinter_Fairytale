@@ -26,28 +26,31 @@
 ...
 (track: &#39;Abiding-Chills&#39;, &#39;stop&#39;)
 (track: &#39;Menacing-Cove&#39;, &#39;play&#39;, &#39;volume&#39;,0.1)
-<!-- Audio for Abiding-Chills -->
-<audio id="Abiding-Chills">
+<!-- Audio for Abiding-Chills with autoplay -->
+<audio id="Abiding-Chills" autoplay>
     <source src="https://github.com/xyz7772/AWinter_Fairytale/raw/main/Abiding-Chills.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
-<!-- Audio for Menacing-Cove -->
-<audio id="Menacing-Cove">
-    <source src="https://github.com/xyz7772/AWinter_Fairytale/raw/main/Menacing-Cove.mp3" type="audio/mpeg">
+<!-- Audio for Menacing-Cove with autoplay -->
+<audio id="Menacing-Cove" autoplay>
+    <source src="YOUR_LINK_FOR_Menacing-Cove.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
-
+<!-- Add other songs with autoplay as needed -->
 
 <script>
-    // Stop the audio for Abiding-Chills
-    document.getElementById("Abiding-Chills").pause();
-    document.getElementById("Abiding-Chills").currentTime = 0; // This line resets the audio to the beginning
+    window.onload = function() {
+        // Stop the audio for Abiding-Chills
+        document.getElementById("Abiding-Chills").pause();
+        document.getElementById("Abiding-Chills").currentTime = 0; // This line resets the audio to the beginning
 
-    // Play the audio for Menacing-Cove with volume set to 0.1
-    document.getElementById("Menacing-Cove").volume = 0.1;
-    document.getElementById("Menacing-Cove").play();
+        // Set volume for Menacing-Cove to 0.1
+        document.getElementById("Menacing-Cove").volume = 0.1;
+        
+        // Set volume for other songs if needed
+    };
 </script>
 Vendyneil, Evening
 
