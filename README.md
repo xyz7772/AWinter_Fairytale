@@ -8,5 +8,8 @@ Story was inspired by Dragonspine of Genshin Impact
 
 ## Usage
 1. Download all files
-2. Click on 'A winter fairy tale.html'
+2. Click on the html file
 3. Enjoy the story
+
+## Web
+https://xyz7772.github.io/AWinter_Fairytale/
